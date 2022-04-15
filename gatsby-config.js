@@ -1,3 +1,6 @@
+require("dotenv").config({
+    path: `.env.${process.env.NODE_ENV}`,
+  })
 module.exports = {
   // Autoload the site metadata.
   siteMetadata: {
