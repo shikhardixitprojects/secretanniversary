@@ -6,7 +6,6 @@ export const getUser = () =>
 const setUser = user =>
   window.localStorage.setItem("gatsbyUser", JSON.stringify(user))
 export const handleLogin = (password) => {
-  console.log(process.env.GATSBY_TEST_VAR);
   if (password === process.env.GATSBY_TEST_VAR) {
     setUser({
       name: `Palak 💖`
