@@ -6,6 +6,7 @@ export const getUser = () =>
 const setUser = user =>
   window.localStorage.setItem("gatsbyUser", JSON.stringify(user))
 export const handleLogin = (password) => {
+  console.log(process.env);
   if (password === process.env.REACT_APP_CUSTOM_ENV_VAR) {
     setUser({
       name: `Palak 💖`
