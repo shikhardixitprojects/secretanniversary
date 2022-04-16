@@ -16,7 +16,6 @@ export const handleLogin = (password) => {
 }
 export const isLoggedIn = () => {
   const user = getUser()
-  // setUser({});
   return !!user.name
 }
 export const logout = callback => {
