@@ -4,7 +4,9 @@ import Post from "../components/common/Post";
 import { postListData } from '../constants/postListData';
 
 const TwentyTwentyTwo = ({ location }) => {
-  console.log(location.state.postId);
+  if(location.state == null || location.state.postId == null) return(
+    <></>
+  )
   return (
     <>
       <Entry location={location}>
