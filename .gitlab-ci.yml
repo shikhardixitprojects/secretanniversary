@@ -1,20 +1,17 @@
-image: node:10.16.0 # change to match your project's node version
-
+image: node:latest
+# This folder is cached between builds
+# https://docs.gitlab.com/ce/ci/yaml/README.html#cache
 cache:
   paths:
     - node_modules/
-
-before_script:
-  - rm -rf build
-  - CI=false npm install
-
+    # Enables git-lab CI caching. Both .cache and public must be cached, otherwise builds will fail.
+    - .cache/
+    - public/
 pages:
   stage: deploy
   script:
-    - CI=false npm run build
-    - rm -rf public
-    - cp build/index.html build/404.html
-    - mv build public
+    - npm install
+    - ./node_modules/.bin/gatsby build --prefix-paths
   artifacts:
     paths:
       - public
