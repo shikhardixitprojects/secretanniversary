@@ -11,9 +11,9 @@ pages:
   stage: deploy
   script:
     - npm install
-    - ./node_modules/.bin/gatsby build --prefix-paths
+    - ./node_modules/.bin/gatsby build
   artifacts:
     paths:
       - public
   only:
-    - master
+    - main

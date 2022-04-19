@@ -2,7 +2,6 @@ require("dotenv").config({
     path: `.env.${process.env.NODE_ENV}`,
   })
 module.exports = {
-  pathPrefix: `/secretanniversary`,
   // Autoload the site metadata.
   siteMetadata: {
       title: 'Secret Anniversary',
