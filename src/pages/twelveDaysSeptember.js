@@ -9,7 +9,7 @@ import { format, compareAsc } from "date-fns"
 import { cloneDeep } from "lodash"
 import { navigate } from "gatsby"
 import ReactAudioPlayer from "react-audio-player"
-import mp3File from "../assets/example.mp3"
+import mp3File from "../assets/Calm.mp3"
 
 const objectData = [
   {
@@ -42,7 +42,7 @@ const objectData = [
         The simple things. <br /> -James Arthur
       </React.Fragment>
     ),
-    extraWords: `Music hits the soul differently and one thing about you is you LOVE music. I collected your favorite artists and made a playlist for you <3`,
+    extraWords: `Music hits the soul differently and one thing about you is you LOVE music. I collected your favorite artists and made a playlist of 50 of your fave songs for you <3`,
     link: `https://open.spotify.com/playlist/1PDkQtHz2qjQZTI2FI7OWv?si=9ee87cd2dea942d5&pt=12432097777f688e17be64b16300c9d0`,
     linkLabel: `Spotify Playlist: For Pals 🌹`,
   },
@@ -74,6 +74,7 @@ const objectData = [
         -Gillian Flynn
       </React.Fragment>
     ),
+    showSound: true,
     extraWords: (
       <React.Fragment>
         I love that part of aura is sleep. You LOVE your sleep. So much that lot
@@ -138,7 +139,6 @@ const objectData = [
     I hope to visit Baroda as well I see there are many interesting sites like palaces and cool monuments!! I'm sure the culture is BOOMING.
     I would love to also show you Kanpur and Hyderabad so we can each explore each other's roots. :)`,
     imageSrc: "palace.webp",
-    soundSnippet: "hi",
   },
   {
     date: "2022-09-07",
@@ -189,7 +189,7 @@ const objectData = [
     checked: false,
     topic: `🧑🏾 Shiki 🤗`,
     description: "All I have to really say!!! 🤪",
-    extraWords: `Every time away from you feels like centuries and centuries. ECSTATIC to be reunited ♡. Come through with this Banh Mi :)`,
+    extraWords: `Every time away from you feels like centuries and centuries. ECSTATIC to be reunited ♡. Coming through with this Banh Mi :)`,
     imageSrc: "FlightInfo.jpg",
   },
   {
@@ -325,6 +325,11 @@ const TwelveDaysSeptember = ({ location }) => {
                     {checkedObject.description}
                   </h1>
                   <br />
+                  {!!checkedObject.showSound && (
+                    <div style={{ paddingBottom: 30 }}>
+                      <ReactAudioPlayer src={mp3File} controls />
+                    </div>
+                  )}
                   {!!checkedObject?.extraWords && (
                     <>
                       <h1 style={{ color: "white", fontFamily: "fantasy" }}>
@@ -362,11 +367,6 @@ const TwelveDaysSeptember = ({ location }) => {
                     >
                       {checkedObject.linkLabel}
                     </a>
-                  )}
-                  {!!checkedObject.soundSnippet && (
-                    <div style={{ paddingBottom: 30 }}>
-                      <ReactAudioPlayer src={mp3File} controls />
-                    </div>
                   )}
                   {!!checkedObject.imageSrc && (
                     <div
