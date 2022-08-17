@@ -3,13 +3,14 @@ import { Router } from "@reach/router"
 import Layout from "../components/layout"
 import PostList from "./postList"
 import Login from "./login"
-import TwentyEighteen from './twentyEighteen'
-import TwentyNineteen from './twentyNineteen'
-import TwentyTwenty from './twentyTwenty'
-import TwentyTwentyOne from './twentyTwentyOne'
-import TwentyTwentyTwo from './twentyTwentyTwo'
+import TwentyEighteen from "./twentyEighteen"
+import TwentyNineteen from "./twentyNineteen"
+import TwentyTwenty from "./twentyTwenty"
+import TwentyTwentyOne from "./twentyTwentyOne"
+import TwentyTwentyTwo from "./twentyTwentyTwo"
+import TwelveDaysSeptember from "./twelveDaysSeptember"
 import "../App.css"
-import "../styles/app.css";
+import "../styles/app.css"
 
 const App = () => (
   <Layout>
@@ -21,6 +22,7 @@ const App = () => (
       <TwentyTwenty path="/twentyTwenty" />
       <TwentyTwentyOne path="/twentyTwentyOne" />
       <TwentyTwentyTwo path="/twentyTwentyTwo" />
+      <TwelveDaysSeptember path="/twelveDaysSeptember" />
     </Router>
   </Layout>
 )

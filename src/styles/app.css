@@ -589,6 +589,133 @@ h6 {
   }
 }
 
+.popout {
+  animation: popout 1s ease;
+  -webkit-animation: popout 1s ease;
+}
+@keyframes popout {
+  from {
+    transform: scale(1);
+  }
+  80% {
+    transform: scale(1.2);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+@-webkit-keyframes popout {
+  from {
+    -webkit-transform: scale(1);
+  }
+  80% {
+    -webkit-transform: scale(1.2);
+  }
+  to {
+    -webkit-transform: scale(1);
+  }
+}
+
+.twelveDaysBackground {
+  background: #c2c6fc;
+  background: -webkit-linear-gradient(top left, #c2c6fc, #3e92bc);
+  background: -moz-linear-gradient(top left, #c2c6fc, #3e92bc);
+  background: linear-gradient(to bottom right, #c2c6fc, #3e92bc);
+}
+
+.opacity:hover h1 {
+  color: blue;
+  opacity: 0.3;
+}
+
+.opacity:hover p {
+  color: blue;
+  opacity: 0.3;
+}
+
+.css-selector2 {
+  background: linear-gradient(10deg, #15171a, #5196e6);
+  background-size: 400% 400%;
+
+  -webkit-animation: AnimationName 12s ease infinite;
+  -moz-animation: AnimationName 12s ease infinite;
+  animation: AnimationName 12s ease infinite;
+}
+
+.css-selector {
+  background: linear-gradient(17deg, #000000, #5196e6);
+  background-size: 400% 400%;
+
+  -webkit-animation: AnimationName 12s ease infinite;
+  -moz-animation: AnimationName 12s ease infinite;
+  animation: AnimationName 12s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+  0% {
+    background-position: 23% 0%;
+  }
+  50% {
+    background-position: 78% 100%;
+  }
+  100% {
+    background-position: 23% 0%;
+  }
+}
+
+@-moz-keyframes AnimationName {
+  0% {
+    background-position: 23% 0%;
+  }
+  50% {
+    background-position: 78% 100%;
+  }
+  100% {
+    background-position: 23% 0%;
+  }
+}
+@keyframes AnimationName {
+  0% {
+    background-position: 23% 0%;
+  }
+  50% {
+    background-position: 78% 100%;
+  }
+  100% {
+    background-position: 23% 0%;
+  }
+}
+
+.rainbow-text {
+  background-image: linear-gradient(
+    to left,
+    violet,
+    indigo,
+    blue,
+    green,
+    yellow,
+    orange,
+    red
+  );
+}
+
+#box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 500px;
+  height: auto;
+  color: white;
+  font-size: 2.5rem;
+  margin-left: 100px;
+  padding: 5%;
+}
+.border-gradient {
+  border: 5px solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(to left, #743ad5, #d53a9d);
+}
+
 .content-body h2 {
   margin: 0.8em 0 0.4em 0;
   font-size: 3.2rem;
@@ -839,7 +966,15 @@ h6 {
   border-radius: 10%;
 }
 
-.post-card-image:hover{
+.twelve-days-image {
+  width: 700px;
+  height: 115px;
+  background: var(--color-secondary) no-repeat center center;
+  background-size: cover;
+  border-radius: 5%;
+}
+
+.post-card-image:hover {
   opacity: 0.7;
 }
 

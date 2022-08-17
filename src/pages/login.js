@@ -98,11 +98,15 @@ const Login = () => {
               onChange={handleUpdate}
             />
           </div>
-            <button type="submit" className="btn btn-primary" style={{
-              fontSize: 15
-            }}>
-              Submit
-            </button>
+          <button
+            type="submit"
+            className="btn btn-primary"
+            style={{
+              fontSize: 15,
+            }}
+          >
+            Submit
+          </button>
         </form>
         <h1
           style={{
