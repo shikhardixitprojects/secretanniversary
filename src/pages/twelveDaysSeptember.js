@@ -278,11 +278,6 @@ const TwelveDaysSeptember = ({ location }) => {
   const checkedObject = data.find(element => element.checked === true)
   return (
     <div className="twelveDaysBackground">
-      {
-        <button onClick={() => document.location.reload()}>
-          Force re-render
-        </button>
-      }
       <Entry location={location}>
         <div className="container">
           <div style={{ marginTop: -20, marginBottom: 10 }}>
