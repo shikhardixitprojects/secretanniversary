@@ -191,6 +191,7 @@ const objectData = [
     description: "All I have to really say!!! 🤪",
     extraWords: `Every time away from you feels like centuries and centuries. ECSTATIC to be reunited ♡. Coming through with this Banh Mi :)`,
     imageSrc: "FlightInfo.jpg",
+    giftOpen: `Gift Package #6: Me, Shiki :)`,
   },
   {
     date: "2022-09-11",
@@ -208,7 +209,7 @@ const objectData = [
     description: `If kisses were stars, I'd give you the sky. If touches were tears, I would cry. If love was water, I'd give you the sea. And be with you for all eternity...`,
     extraWords: `Happy birthday my love!!!!!\n23 is HUGE! Every day is a blessed one with you. I am so happy I'm with you to celebrate and eat some dank food. Hopefully we can see a beatiful sunset too. :)`,
     imageSrc: "TopSunsetBackground.jpg",
-    giftOpen: `Gift Package #6: La Planta :)`,
+    giftOpen: `Gift Package #7: La Planta :)`,
   },
 ]
 
